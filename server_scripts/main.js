@@ -1,1 +1,3 @@
-//priority 0
+//priority 1000
+
+global.perlsForbidden = false;
