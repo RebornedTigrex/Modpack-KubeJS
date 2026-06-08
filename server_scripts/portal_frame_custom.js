@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
   event.remove({ output: 'irons_spellbooks:portal_frame' })
-
+//удаление плиты
   event.shaped('irons_spellbooks:portal_frame', [
     'MEM',
     'AOA',
