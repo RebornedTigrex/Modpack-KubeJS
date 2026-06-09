@@ -17,5 +17,28 @@ ServerEvents.recipes(event => {
       U: 'distant_worlds:ubricite_crystal',
     })
   }
-    event.shapeless(Item.of('companions:crystallized_blood_chestplate'), ['3x companions:crystallized_blood'])
+    event.shapeless(Item.of('companions:crystallized_blood_chestplate'), //измен крафт нагрудника
+      [
+        '3x companions:crystallized_blood', 
+        'minecraft:netherite_chestplate', 
+        'knightlib:filled_grail', 
+        '2x distant_worlds:vairis_crystal'
+      ]
+    )
+        event.shapeless(Item.of('companions:crystallized_blood_leggings'), //измен крафт штанов
+      [
+        '3x companions:crystallized_blood', 
+        'minecraft:netherite_leggings', 
+        'knightlib:filled_grail', 
+        '2x distant_worlds:vairis_crystal'
+      ]
+    )
+    event.shapeless(Item.of('companions:crystallized_blood_boots'), //измен крафт ботинок
+      [
+        '3x companions:crystallized_blood', 
+        'minecraft:netherite_boots', 
+        'knightlib:filled_grail', 
+        '2x distant_worlds:vairis_crystal'
+      ]
+    )
 })
