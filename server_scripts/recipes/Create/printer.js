@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
   if(global.params.REPLACE_PRINTER){//Параметр "Отключить добавление крафта?"
 
-
-
+    event.remove({ output: 'create_enchantment_industry:printer'})
+    //удаление принтера
     event.shaped('create_enchantment_industry:printer', [//смена крафта для пинтера
       'ECE',
       'KGK',
@@ -14,5 +14,5 @@ ServerEvents.recipes(event => {
       C: 'create:copper_casing',
       E: 'irons_spellbooks:epic_ink',
     })
-}
+  }
 })
